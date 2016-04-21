@@ -21,7 +21,7 @@ title: Test
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test lodash</span>
 <span class="go">snyk test ionic@1.6.5</span></code></pre></div>
 
-<p><strong>To test a public Github repository,</strong> just run <code>snyk test</code> and include the Github URL to the repo.</p>
+<p><strong>To test a public Github repository,</strong> run <code>snyk test</code> and include the Github URL to the repo.</p>
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test https://github.com/snyk/snyk</span></code></pre></div>
 <h3 id="git-url-formats">The following git URL formats are supported:</h3>
 
