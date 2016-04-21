@@ -6,7 +6,7 @@ title: Monitor
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/myproject/ snyk monitor</span></code></pre></div>
 
-<p>Just before you deploy, run <code>snyk monitor</code> in your project directory. This will take a snapshot of your current dependencies, so we can notify you about newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are created. If you take multiple snapshots of the same project, we will only alert you to new information about the latest one.</p>
+<p>Before you deploy, run <code>snyk monitor</code> in your project directory. This will take a snapshot of your current dependencies, so we can notify you about newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are created. If you take multiple snapshots of the same project, we will only alert you to new information about the latest one.</p>
 
 <p>Log in and go to <a href="https://snyk.io/monitor/">snyk.io/monitor</a> to see the lastest snapshot and history of your project.</p>
 
