@@ -6,4 +6,4 @@ Some Snyk commands require authentication. We use GitHub for authentication, but
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk auth &lt;your token&gt;</span></code></pre></div>
 
-Alternatively, you can run `snyk auth` in your terminal and it’ll guide you through this process. Or jump right into Snyk’s <a href="#wizard"><code>wizard</code></a>, that will also take you through authentication.
+Alternatively, you can run `snyk auth` in your terminal and it’ll guide you through this process.
