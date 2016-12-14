@@ -6,28 +6,30 @@ Snyk is installed via npm. Run these commands to install it for local use:
 
 <div class="highlight"><pre><code class="language-console" data-lang="console">npm install -g snyk</code></pre></div>
 
-Once installed, you can perform a quick test on a public package, for instance:
+Once installed, you can perform a quick test on a public npm package, for instance:
 
-<div class="highlight"><pre><code class="language-console" data-lang="console">snyk test ionic@1.6.5</code></pre></div>
+<div class="highlight"><pre><code class="language-console" data-lang="console">snyk test ionic</code></pre></div>
 
 As you can see, Snyk found and reported several vulnerabilities in the package. For each issue found, Snyk provides the severity of the issue, a link to a detailed description, the path through which the vulnerable module got into your system, and guidance on how to fix the problem.
 
 <div class="screenshot">
 <h3 class="screenshot__label">Example output</h3>
 <pre class="code">$ snyk test
-<span class="syn--red">✗ Vulnerability found on gm@1.13.3</span>
-Info: https://snyk.io/vuln/npm:gm:20151026
-From: snyk-demo-app@latest &gt; gm@1.13.3
-<span class="syn--white syn--bold">Upgrade direct dependency gm@1.13.3 to gm@1.21.1</span>
+<span class="syn--red">✗ High severity vulnerability found on minimatch@0.3.0</span>
+- desc: Regular Expression Denial of Service
+- info: https://snyk.io/vuln/npm:minimatch:20160620
+- from: ionic@2.1.17 > gulp@3.8.8 > liftoff@0.12.1 > findup-sync@0.1.3 > glob@3.2.11 > minimatch@0.3.0
+<span class="syn--white syn--bold">Upgrade direct dependency gulp@3.8.8 to gulp@3.8.11 (triggers upgrades to liftoff@2.2.0 > findup-sync@0.3.0 > glob@5.0.15 > minimatch@3.0.2)</span>
 
-<span class="syn--red">✗ Vulnerability found on qs@0.6.6</span>
-Info: https://snyk.io/vuln/npm:qs:20140806
-From: snyk-demo-app@latest &gt; webdriverio@2.4.5 &gt; request@2.34.0 &gt; qs@0.6.6
-<span class="syn--white syn--bold">Upgrade direct dependency webdriverio@2.4.5 to webdriverio@3.0.1 (triggers upgrades to request@2.40.0 &gt; qs@1.0.0)</span>
+<span class="syn--red">✗ Medium severity vulnerability found on moment@2.11.1</span>
+- desc: Regular Expression Denial of Service
+- info: https://snyk.io/vuln/npm:moment:20161019
+- from: ionic@2.1.17 > moment@2.11.1
+<span class="syn--white syn--bold">Upgrade direct dependency moment@2.11.1 to moment@2.15.2</span>
 
-<span class="syn--red">✗ Vulnerability found on qs@0.4.2</span>
-Info: https://snyk.io/vuln/npm:qs:20140806-1
-From: snyk-demo-app@latest &gt; cucumber@0.3.0 &gt; connect@2.3.2 &gt; qs@0.4.2
-No direct dependency upgrade can address this issue.
-<span class="syn--white syn--bold">Run `snyk wizard` to explore remediation options</span></pre>
+<span class="syn--red">✗ Medium severity vulnerability found on send@0.10.1</span>
+- desc: Root Path Disclosure
+- info: https://snyk.io/vuln/npm:send:20151103
+- from: ionic@2.1.17 > serve-static@1.7.1 > send@0.10.1
+<span class="syn--white syn--bold">Upgrade direct dependency serve-static@1.7.1 to serve-static@1.8.1 (triggers upgrades to send@0.11.1)</span></pre>
 </div>
