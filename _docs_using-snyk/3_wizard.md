@@ -2,7 +2,9 @@
 title: Wizard
 ---
 
-<p>Snyk’s <code>wizard</code> walks you through finding and fixing the known vulnerabilities in your project. It leverages the separate <a href="#test"><code>test</code></a>, <a href="#protect"><code>protect</code></a> and <a href="#monitor"><code>monitor</code></a> actions, supported by an interactive workflow. To run the wizard, navigate to your project folder and run <code>snyk wizard</code> like so:</p>
+<p>Snyk’s <code>wizard</code> walks you through finding and fixing the known vulnerabilities in your project. Note that the wizard is currently <strong>only available for Node.js projects.</strong></p>
+
+<p>It leverages the separate <a href="#test"><code>test</code></a>, <a href="#protect"><code>protect</code></a> and <a href="#monitor"><code>monitor</code></a> actions, supported by an interactive workflow. To run the wizard, navigate to your project folder and run <code>snyk wizard</code> like so:</p>
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/myproj/</span>
 <span class="go">snyk wizard</span></code></pre></div>
@@ -30,19 +32,22 @@ Snyk's wizard will:
   * Guide you through fixing found vulnerabilities
   * Create a .snyk policy file to guide snyk commands such as test and protect
   * Remember your dependencies to alert you when new vulnerabilities are disclosed
+ 
+ Note: Node.js only. 
 
 Loading dependencies...
 Querying vulnerabilities database...
-Tested 228 dependencies for known vulnerabilities, <span class="syn--red syn--bold">found 5 vulnerabilities.</span>
+Tested 446 dependencies for known vulnerabilities, <span class="syn--red syn--bold">found 8 vulnerabilities, 20 vulnerable paths.</span>
 
-<span class="syn--green">?</span> <span class="syn--white syn--bold">High severity vulnerability found in gm@1.13.3
-  - info: <a href="https://snyk.io/vuln/npm:gm:20151026" title="Vulnerability report.">https://snyk.io/vuln/npm:gm:20151026</a>
-  - from: snyk-demo-app@latest &gt; gm@1.13.3</span> <span class="syn--blue">Upgrade</span>
+<span class="syn--green">?</span> <span class="syn--white syn--bold">High severity vuln found in tough-cookie@2.2.2, introduced via azure-mgmt-storage@0.9.16
+- desc: ReDoS via long string of semicolons
+- info: <a href="https://snyk.io/vuln/npm:tough-cookie:20160722" title="Vulnerability report.">https://snyk.io/vuln/npm:tough-cookie:20160722</a>
+- from: azure-mgmt-storage@0.9.16 > azure-common@0.9.11 > request@2.45.0 > tough-cookie@2.2.2</span> <span class="syn--blue">Upgrade</span>
 
-<span class="syn--green">?</span> <span class="syn--white syn--bold">4 vulnerabilities introduced via falcor-router-demo@1.0.3
-  - info: <a href="https://snyk.io/package/npm/falcor-router-demo/1.0.3" title="Package test report.">https://snyk.io/package/npm/falcor-router-demo/1.0.3</a>
+<span class="syn--green">?</span> <span class="syn--white syn--bold">6 vulnerabilities introduced via falcor-router-demo@1.0.5
+  - info: <a href="https://snyk.io/package/npm/falcor-router-demo/1.0.5" title="Package test report.">https://snyk.io/package/npm/falcor-router-demo/1.0.5</a>
   Remediation options (Use arrow keys)</span>
-<span class="syn--blue">❯ Upgrade to falcor-router-demo@1.0.5 (triggers upgrade to semver@4.3.3, qs@4.0.0) </span>
+<span class="syn--blue">❯ Re-install falcor-router-demo@1.0.5 (triggers upgrade to minimatch@3.0.2, tough-cookie@2.3.0) </span>
   Review vulnerabilities separately
   Set to ignore for 30 days (updates policy)
   Skip</pre>
