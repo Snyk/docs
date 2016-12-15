@@ -2,7 +2,9 @@
 title: Integrating Snyk into your dev workflow
 ---
 
-<p>To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (a.k.a. build) system. Here are the steps required to to so:</p>
+<p>To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (a.k.a. build) system.</p>
+
+<h3 class="screenshot__label">Node.js CI integration</h3>
 
 1. Install the Snyk utility using `npm install -g snyk`.
 2. Run `snyk wizard` in the directory of your project following the prompts which will also generate a `.snyk` policy file.
@@ -20,7 +22,11 @@ snyk monitor
 
 Configure your environment to include the `SNYK_TOKEN` environment variable. You can find your API token on the dashboard after logging in.
 
-**Important note:**
+<h3 class="screenshot__label">Ruby CI integration</h3>
+
+NEEDS CONTENT
+
+<h3 class="screenshot__label">API token configuration</h3>
 
 Make sure you don't check your API token into source control, to avoid exposing it to others. Instead, use your CI environment variables to configure it.
 
