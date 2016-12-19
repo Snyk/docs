@@ -18,6 +18,12 @@ Note that patching is only supported for Node.js repos; Ruby vulnerabilities can
 
 ![Open a fix PR page](https://res.cloudinary.com/snyk/image/upload/v1478172977/docs/Open_a_fix_PR.png)
 
+Snyk fixes your Ruby projects by updating vulnerable dependencies in your Gemfile.lock file. When a fix requires a change to your Gemfile, our fix pull requests will propose these changes. 
+
+When you open a PR via snyk.io, we will give you a heads-up when this is the case:
+
+![Gemfile changes flag](https://res.cloudinary.com/snyk/image/upload/v1482163010/docs/Gemfile-changes-flag.png)
+
 Here’s an example for the pull request:
 
 ![Snyk remediation PR](https://res.cloudinary.com/snyk/image/upload/v1478173163/docs/Snyk_fix_PR_example.png)
