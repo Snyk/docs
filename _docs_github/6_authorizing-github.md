@@ -1,19 +1,20 @@
 ---
 title: Authorizing GitHub
 ---
-**Repository access**
+### Repository access
 
-When granting Snyk access to GitHub, you can choose to
+When granting Snyk access to GitHub, you can choose to:
+
 * grant access to public and private repositories
 * grant access to public repositories only
 
-This is for all GitHub organisations you have sufficient permissions for. 
+This is for all GitHub organisations you have sufficient permissions for.
 
 Note that granting access will test your repositories for vulnerabilities only once - it won't automatically set webhooks or enable continuous monitoring.
 
 ![Repo access permissions](https://res.cloudinary.com/snyk/image/upload/c_scale,h_358/v1482163908/docs/GH_repository_access.png)
 
-**GitHub organisations**
+### GitHub organisations
 
 To test your GitHub organisation's repositories with Snyk, you will need to have sufficient user permissions. When you authenticate Snyk, GitHub will show you which organisations you can integrate.
 
