@@ -6,7 +6,11 @@ Snyk is installed via npm. Run these commands to install it for local use:
 
 <div class="highlight"><pre><code class="language-console" data-lang="console">npm install -g snyk</code></pre></div>
 
-Once installed, you can perform a quick test on a public npm package, for instance:
+Once installed, you need to authenticate with your Snyk account:
+
+<div class="highlight"><pre><code class="language-console" data-lang="console">snyk auth</code></pre></div>
+
+Now you can perform a quick test on a public npm package, for instance:
 
 <div class="highlight"><pre><code class="language-console" data-lang="console">snyk test ionic</code></pre></div>
 
