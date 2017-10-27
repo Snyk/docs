@@ -2,12 +2,12 @@
 title: GitHub badge
 ---
 
-To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the relevant snippet below and replace "user/name" with the GitHub username and repo you want to test.
+To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the relevant snippet below and replace "user/(repo)name" with the GitHub username and repo you want to test.
 
 ### HTML:
 
 ```html
-<img src="https://snyk.io/test/github/snyk/goof/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/snyk/goof" style="max-width:100%;"/>
+<a href="https://snyk.io/test/github/snyk/goof"><img src="https://snyk.io/test/github/snyk/goof/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/snyk/goof" style="max-width:100%;"/></a>
 ```
 
 ### Markdown:
