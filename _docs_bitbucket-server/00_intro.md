@@ -2,7 +2,7 @@
 title: ""
 ---
 
-Snyk's Bitbucket Server integration lets you monitor the source code of your Node.js and Rubygems repos for any known vulnerabilities found in the application's dependencies, testing at a frequency you control.
+Snyk's Bitbucket Server integration lets you monitor the source code of your repos for any known vulnerabilities found in the application's dependencies, testing at a frequency you control.
 
 This integration only works with Bitbucket Server instances that are publicly reachable (not on a private network) and not for bitbucket.org.
 
