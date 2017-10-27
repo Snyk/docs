@@ -10,4 +10,4 @@ If there are no vulnerabilities, this is indicated by a green badge.
 
 If vulnerabilities have been found, the red badge will show the number of vulnerabilities.
 
-<a class="link--unstyled" href="https://snyk.io/test/npm/jsbin"><img src="https://snyk.io/test/npm/jsbin/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/npm/jsbin/" style="max-width:100%;"></a>
+<a class="link--unstyled" href="https://snyk.io/test/github/snyk/goof"><img src="https://snyk.io/test/github/snyk/goof/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/snyk/goof" style="max-width:100%;"></a>
