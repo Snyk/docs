@@ -8,7 +8,7 @@ If your manifest file is in another location other than the root of the reposito
 ### HTML
 
 ```html
-<a href="https://snyk.io/test/github/{username}/{repo}"><img src="https://snyk.io/test/github/snyk/goof/badge.svg?targetFile={path-to-target-file}" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/{username}/{repo}" style="max-width:100%;"/></a>
+<a href="https://snyk.io/test/github/{username}/{repo}"><img src="https://snyk.io/test/github/{username}/{repo}/badge.svg?targetFile={path-to-target-file}" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/{username}/{repo}" style="max-width:100%;"/></a>
 ```
 
 ### Markdown:
