@@ -17,11 +17,6 @@ title: Test
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">$ snyk test --file=package.json</span>
 </code></pre></div>
 
-<p><code>snyk test</code> can also get a folder name as an argument, which is especially handy if you want to <strong>test multiple projects.</strong> For instance, the following command tests all the projects under a certain folder for known vulnerabilities:</p>
-
-<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/</span>
-<span class="go">snyk test *</span></code></pre></div>
-
 <p><strong>Note for Node.js:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
 
