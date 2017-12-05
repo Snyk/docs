@@ -11,3 +11,11 @@ If there are no vulnerabilities, this is indicated by a green badge.
 If vulnerabilities have been found, the red badge will show the number of vulnerabilities.
 
 <a class="link--unstyled" href="https://snyk.io/test/github/snyk/goof"><img src="https://snyk.io/test/github/snyk/goof/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/snyk/goof" style="max-width:100%;"></a>
+
+### Styles
+
+To change the style of the badge, you can add the following query parameters after `badge.svg`:
+
+<a class="link--unstyled" href="https://snyk.io/test/npm/name"><img src="https://snyk.io/test/npm/name/badge.svg?style=flat-square" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/npm/name/" style="max-width:100%;"></a> `?style=flat-square` 
+
+<a class="link--unstyled" href="https://snyk.io/test/npm/name"><img src="https://snyk.io/test/npm/name/badge.svg?style=plastic" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/npm/name/" style="max-width:100%;"></a> `?style=plastic`
