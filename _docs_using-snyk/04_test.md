@@ -10,7 +10,7 @@ title: Test
 <p><code>snyk test</code> takes stock of all the local dependencies and queries the snyk service for related known vulnerabilities. It displays the found issues along with additional information. For Node.js projects, it also suggests remediation steps.</p>
 
 <p>When <code>snyk test</code> runs, it tries to detect the appropriate file for your project by looking for the following files, in this order:</p>
-<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li><li>requirements.txt</li><li>build.gradle</li><li>build.sbt</li></ol>
+<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li><li>requirements.txt</li><li>build.gradle</li><li>build.sbt</li><li>Gopkg.lock</li><li>vendor/vendor.json</li></ol>
 
 <p>When testing locally, you can specify the file that Snyk should inspect for package information.</p>
 
@@ -22,6 +22,9 @@ Since <code>snyk test</code> looks at the locally installed modules, it needs to
 
 <p><strong>Note for Java:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
+
+<p><strong>Note for Golang:</strong> <br>
+Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
 
 **Note for Scala:** In order to use the CLI to test against your `build.sbt` manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
 

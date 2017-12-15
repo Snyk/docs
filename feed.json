@@ -103,6 +103,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign golang = site.docs_golang | where: 'draft', 'false' %}{% for article in golang %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_golang" : "true",
+    "topic" : "golang",
+    "topicSlug" : "snyk-for-golang",
+    "url"     : "/docs/golang/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign nodejs = site.docs_nodejs | where: 'draft', 'false' %}{% for article in nodejs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},

@@ -63,10 +63,20 @@
         </li>
         <li class="nav-tree__item nav--docs__item nav--docs__scala">
           <a href="/docs/scala/" class="nav-tree__item__link">Snyk for Scala</a>
-          {% if page.section == "python" %}
-          <ul class="nav-tree__branch">{% for article in site.docs_python %}{% if article.title == "" %}{% else %}
+          {% if page.section == "scala" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_scala %}{% if article.title == "" %}{% else %}
             <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
               <a href="/docs/scala/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__golang">
+          <a href="/docs/golang/" class="nav-tree__item__link">Snyk for Golang</a>
+          {% if page.section == "golang" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_golang %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/golang/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
             </li>{% endif %}{% endfor %}
           </ul>
           {% endif %}

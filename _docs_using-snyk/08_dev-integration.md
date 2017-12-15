@@ -11,7 +11,7 @@ title: Integrating Snyk into your dev workflow
 3. Ensure the `.snyk` file you generated was added to your source control (`git add .snyk`).
 4. If you selected to, Snyk will include `snyk test` as part of your `npm test` command, so if there are new vulnerabilities in the future, your CI will fail, protecting you from introducing vulnerabilities to production. Alternatively, you can add `snyk test` to any other CI test platform you use.
 
-<h3>For Ruby, Python and Java CI</h3>
+<h3>For Ruby, Python, Java and Go CI</h3>
 
 1. Install the Snyk utility using `npm install -g snyk`.
 2. Add `snyk test` to your CI test platform
