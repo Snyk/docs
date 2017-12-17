@@ -45,6 +45,7 @@ collections:
   - docs_scala
   - docs_ruby
   - docs_golang
+  - docs_dotnet
   - docs_nodejs
   - docs_heroku
   - docs_aws-lambda

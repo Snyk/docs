@@ -113,6 +113,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign dotnet = site.docs_dotnet | where: 'draft', 'false' %}{% for article in dotnet %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_dotnet" : "true",
+    "topic" : "dotnet",
+    "topicSlug" : "snyk-for-dotnet",
+    "url"     : "/docs/dotnet/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign nodejs = site.docs_nodejs | where: 'draft', 'false' %}{% for article in nodejs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
