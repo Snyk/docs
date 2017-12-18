@@ -23,10 +23,7 @@ Since <code>snyk test</code> looks at the locally installed modules, it needs to
 <p><strong>Note for Java:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
 
-<p><strong>Note for Golang:</strong> <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
-
-**Note for Scala:** In order to use the CLI to test against your `build.sbt` manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
+**Note for Scala:** <br> In order to use the CLI to test against your `build.sbt` manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
 
 Running `snyk test` on your Scala projects without this plugin will throw the following error:
 
@@ -34,6 +31,9 @@ Running `snyk test` on your Scala projects without this plugin will throw the fo
 Error: Missing plugin `sbt-dependency-graph` (https://github.com/jrudolph/sbt-dependency-graph).
 Please install it globally or on the current project and try again.
 ```
+
+<p><strong>Note for Golang:</strong> <br>
+Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
 
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>
