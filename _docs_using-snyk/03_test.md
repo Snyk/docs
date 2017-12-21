@@ -41,7 +41,7 @@ title: Test
 
 <p>Running <code>snyk test</code> on your Scala projects without this plugin will throw the following error:</p>
 
-<pre><code>Error: Missing plugin `sbt-dependency-graph` (https://github.com/jrudolph/sbt-dependency-graph).
+<pre><code>Error: Missing plugin sbt-dependency-graph (https://github.com/jrudolph/sbt-dependency-graph).
 Please install it globally or on the current project and try again.
 </code></pre>
 
