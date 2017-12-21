@@ -30,27 +30,27 @@ title: Test
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">$ snyk test --file=package.json</span>
 </code></pre></div>
 
-<p><strong>Note for Node.js:</strong> <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
+<h3>Note for Node.js:</h3>
+<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
 
-<p><strong>Note for Java:</strong> <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
+<h3>Note for Java:</h3>
+<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
 
-<p><strong>Note for Scala:<strong> <br> In order to use the CLI to test against your <code>build.sbt</code> manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
+<h3>Note for Scala:<h3>
+<p>In order to use the CLI to test against your <code>build.sbt</code> manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).</p>
 
-Running <code>snyk test</code> on your Scala projects without this plugin will throw the following error:
+<p>Running <code>snyk test</code> on your Scala projects without this plugin will throw the following error:</p>
 
-<code>
+<pre><code>
 Error: Missing plugin `sbt-dependency-graph` (https://github.com/jrudolph/sbt-dependency-graph).
 Please install it globally or on the current project and try again.
-</code>
-</p>
+</code></pre>
 
-<p><strong>Note for Golang:</strong> <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
+<h3>Note for Golang:</h3>
+<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
 
-<p><strong>Note for .NET:</strong> <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>packages/</code>(.NET) or <code>obj/</code>(.NET Core) folder has been populated via Visual Studio or <code>dotnet restore</code>.</p>
+<h3>Note for .NET:</h3>
+<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>packages/</code>(.NET) or <code>obj/</code>(.NET Core) folder has been populated via Visual Studio or <code>dotnet restore</code>.</p>
 
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>
