@@ -16,6 +16,7 @@
     {% if page.section == "python" %}docs--python{% endif %}
     {% if page.section == "scala" %}docs--scala{% endif %}
     {% if page.section == "golang" %}docs--golang{% endif %}
+    {% if page.section == "dotnet" %}docs--dotnet{% endif %}
     {% if page.section == "heroku" %}docs--heroku{% endif %}
     {% if page.section == "aws-lambda" %}docs--lambda{% endif %}
     {% if page.section == "cloud-foundry" %}docs--cloud-foundry{% endif %}
@@ -98,6 +99,16 @@
           <ul class="nav-tree__branch">{% for article in site.docs_golang %}{% if article.title == "" %}{% else %}
             <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
               <a href="/docs/golang/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__dotnet">
+          <a href="/docs/dotnet/" class="nav-tree__item__link">Snyk for .NET</a>
+          {% if page.section == "dotnet" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_dotnet %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/dotnet/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
             </li>{% endif %}{% endfor %}
           </ul>
           {% endif %}
@@ -295,6 +306,15 @@
 
       {% if page.section == "golang" %}
       {% for article in site.docs_golang %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "dotnet" %}
+      {% for article in site.docs_dotnet %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}
