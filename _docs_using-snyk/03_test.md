@@ -36,14 +36,18 @@ Since <code>snyk test</code> looks at the locally installed modules, it needs to
 <p><strong>Note for Java:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
 
-<p><strong>Note for Scala:<strong> <br> In order to use the CLI to test against your `build.sbt` manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).</p>
+<p><strong>Note for Scala:<strong> <br> In order to use the CLI to test against your <code>build.sbt</code> manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
 
-Running `snyk test` on your Scala projects without this plugin will throw the following error:
+Running <code>snyk test</code> on your Scala projects without this plugin will throw the following error:
 
-```
+<code>
 Error: Missing plugin `sbt-dependency-graph` (https://github.com/jrudolph/sbt-dependency-graph).
 Please install it globally or on the current project and try again.
-```
+</code>
+</p>
+
+<p><strong>Note for Golang:</strong> <br>
+Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
 
 <p><strong>Note for .NET:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>packages/</code>(.NET) or <code>obj/</code>(.NET Core) folder has been populated via Visual Studio or <code>dotnet restore</code>.</p>
