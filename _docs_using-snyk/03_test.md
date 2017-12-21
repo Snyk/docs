@@ -52,6 +52,9 @@ Please install it globally or on the current project and try again.
 <h3>Note for .NET:</h3>
 <p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>packages/</code>(.NET) or <code>obj/</code>(.NET Core) folder has been populated via Visual Studio or <code>dotnet restore</code>.</p>
 
+<h3>Note for PHP:</h3>
+<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>composer.lock</code> file has been created by <code>composer install</code>.</p>
+
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test https://github.com/snyk/snyk</span></code></pre></div>

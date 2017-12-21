@@ -17,6 +17,7 @@
     {% if page.section == "scala" %}docs--scala{% endif %}
     {% if page.section == "golang" %}docs--golang{% endif %}
     {% if page.section == "dotnet" %}docs--dotnet{% endif %}
+    {% if page.section == "php" %}docs--php{% endif %}
     {% if page.section == "heroku" %}docs--heroku{% endif %}
     {% if page.section == "aws-lambda" %}docs--lambda{% endif %}
     {% if page.section == "cloud-foundry" %}docs--cloud-foundry{% endif %}
@@ -109,6 +110,16 @@
           <ul class="nav-tree__branch">{% for article in site.docs_dotnet %}{% if article.title == "" %}{% else %}
             <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
               <a href="/docs/dotnet/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__php">
+          <a href="/docs/php/" class="nav-tree__item__link">Snyk for PHP</a>
+          {% if page.section == "php" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_php %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/php/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
             </li>{% endif %}{% endfor %}
           </ul>
           {% endif %}
@@ -322,7 +333,16 @@
       {% endfor %}
       {% endif %}
 
-       {% if page.section == "heroku" %}
+      {% if page.section == "php" %}
+      {% for article in site.docs_php %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "heroku" %}
       {% for article in site.docs_heroku %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}

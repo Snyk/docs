@@ -123,6 +123,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign php = site.docs_php | where: 'draft', 'false' %}{% for article in php %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_php" : "true",
+    "topic" : "php",
+    "topicSlug" : "snyk-for-php",
+    "url"     : "/docs/php/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign nodejs = site.docs_nodejs | where: 'draft', 'false' %}{% for article in nodejs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
