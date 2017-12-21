@@ -36,7 +36,7 @@ Since <code>snyk test</code> looks at the locally installed modules, it needs to
 <p><strong>Note for Java:</strong> <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
 
-<p><strong>Note for Scala:<strong> <br> In order to use the CLI to test against your <code>build.sbt</code> manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
+<p><strong>Note for Scala:</strong> <br> In order to use the CLI to test against your <code>build.sbt</code> manifest file, you'll need to first install the [sbt-dependency-graph plugin](https://github.com/jrudolph/sbt-dependency-graph).
 
 Running <code>snyk test</code> on your Scala projects without this plugin will throw the following error:
 
