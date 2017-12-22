@@ -46,13 +46,13 @@ Please install it globally or on the current project and try again.
 </code></pre>
 
 <h3>Note for Golang:</h3>
-<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>vendor/</code> was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
+<p>Since <code>snyk test</code> inspects the locally installed modules, it needs to run after the <code>vendor/</code> folder was populated via <code>dep ensure</code> or <code>govendor sync</code>. In addition, the <code>GOPATH</code> environment variable must be set correctly.</p>
 
 <h3>Note for .NET:</h3>
-<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>packages/</code>(.NET) or <code>obj/</code>(.NET Core) folder has been populated via Visual Studio or <code>dotnet restore</code>.</p>
+<p>Since <code>snyk test</code> inspects the locally installed modules, it needs to run after the <code>packages/</code>(.NET) or <code>obj/</code>(.NET Core) folder has been populated via Visual Studio or <code>dotnet restore</code>.</p>
 
 <h3>Note for PHP:</h3>
-<p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after the <code>composer.lock</code> file has been created by <code>composer install</code>.</p>
+<p>Since <code>snyk test</code> inspects the locally installed modules, it needs to run after the <code>composer.lock</code> file has been created by <code>composer install</code>.</p>
 
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>
