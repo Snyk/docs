@@ -8,7 +8,7 @@ You can add your Node.js, Ruby, Python, Scala and Java GitHub repos and quickly 
 
 1. Go to the [integrations](https://snyk.io/integrations) page and click "Connect to GitHub".
 2. You need to grant Snyk additional GitHub permissions. Choose to give access to public and private repositories, or grant access to public repositories only.
-3. Next, you’ll see a list of all GitHub repos across your GitHub organisations. Select the repos you would like to test with Snyk. If you have supported manifest files at the root, 1 or 2 directories deep - Snyk would automatically recognize and create projects for them.
+3. Next, you’ll see a list of all GitHub repos across your GitHub organisations. Select the repos you would like to test with Snyk. If you have supported manifest files at the root, or one or two directories deep, Snyk will automatically recognize and create projects for them.
 4. Click on the button at the bottom of the page "Add selected repositories to Snyk". The selected repos appear in your projects, and will be continuously checked for vulnerabilities.
 5. Clicking "View report" on any project lets you view & fix vulnerabilities right away. You'll be able to review the suggested remediations, and create a PR with the required upgrades or patches.
 
