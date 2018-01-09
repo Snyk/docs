@@ -22,7 +22,7 @@ title: Test
   <li>Gopkg.lock</li>
   <li>vendor/vendor.json</li>
   <li>obj/project.assets.json</li>
-  <li>*.csproj</li>
+  <li>packages.config</li>
 </ol>
 
 <p>When testing locally, you can specify the file that Snyk should inspect for package information.</p>
