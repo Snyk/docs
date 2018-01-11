@@ -30,6 +30,11 @@ title: Test
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">$ snyk test --file=package.json</span>
 </code></pre></div>
 
+<p>The CLI does not currently auto-detect `.sln` files, so for .NET and .NET Core projects you can specify in the <code>--file</code> parameter the location of the solution file and the CLI will run on all the projects it finds inside.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">$ snyk test --file=myApp.sln</span>
+</code></pre></div>
+
 <h3>Note for Node.js:</h3>
 <p>Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
 
