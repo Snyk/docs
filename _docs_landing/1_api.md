@@ -6,4 +6,4 @@ Looking to build something bespoke? You can use our API to access information ab
 
 Read the complete [API Documentation](https://snyk.docs.apiary.io).
 
-Let us know if you've got any questions or suggestions. We'd love to hear how you're using the API.
+[Let us know](mailto:support@snyk.io) if you've got any questions or suggestions. We'd love to hear how you're using the API.
