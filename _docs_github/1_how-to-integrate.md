@@ -4,7 +4,7 @@ title: How to integrate GitHub to test and watch your repositories
 
 You can add your Node.js, Ruby, Python, Scala and Java GitHub repos and quickly test them, or decide which ones you’d like to continously watch with Snyk.
 
-![Adding your GH repos](http://res.cloudinary.com/snyk/image/upload/w_800/v1493817321/docs/choose_github_repos.png)
+![Adding your GH repos](http://res.cloudinary.com/snyk/image/upload/v1518193304/docs/GH-add_repos.png)
 
 1. Go to the [integrations](https://snyk.io/integrations) page and click "Connect to GitHub".
 2. You need to grant Snyk additional GitHub permissions. Choose to give access to public and private repositories, or grant access to public repositories only.
