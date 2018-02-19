@@ -173,6 +173,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign ignoring = site.docs_ignoring-issues | where: 'draft', 'false' %}{% for article in ignoring-issues %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_ignoring-issues" : "true",
+    "topic" : "ignoring-issues",
+    "topicSlug" : "ignoring-issues",
+    "url"     : "/docs/ignoring-issues/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign bitbucket-server = site.docs_bitbucket-server | where: 'draft', 'false' %}{% for article in bitbucket-server %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},

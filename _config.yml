@@ -33,6 +33,7 @@ collections:
   - docs_faqs
   - docs_ci
   - docs_github
+  - docs_ignoring-issues
   - docs_orgs
   - docs_security
   - docs_badges
@@ -41,7 +42,7 @@ collections:
   - docs_slack-integration
   - docs_broker
   - docs_java
-  - docs_python 
+  - docs_python
   - docs_scala
   - docs_ruby
   - docs_golang

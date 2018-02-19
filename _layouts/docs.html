@@ -184,6 +184,16 @@
           </ul>
           {% endif %}
         </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__ignoring-issues">
+          <a href="/docs/ignoring-issues/" class="nav-tree__item__link">Ignoring issues</a>
+          {% if page.section == "ignoring-issues" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_ignoring-issues %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/ignoring-issues/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__using-snyk">
           <a href="/docs/using-snyk/" class="nav-tree__item__link">Snyk CLI</a>
           {% if page.section == "using-snyk" %}
@@ -401,6 +411,15 @@
 
       {% if page.section == "github" %}
       {% for article in site.docs_github %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "ignoring-issues" %}
+      {% for article in site.docs_ignoring-issues %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}
