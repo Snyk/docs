@@ -101,6 +101,16 @@
           </ul>
           {% endif %}
         </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__reports">
+          <a href="/docs/reports/" class="nav-tree__item__link">Reports</a>
+          {% if page.section == "reports" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_reports %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/reports/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__licenses">
           <a href="/docs/licenses/" class="nav-tree__item__link">Licenses</a>
           {% if page.section == "licenses" %}
