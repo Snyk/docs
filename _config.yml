@@ -41,7 +41,7 @@ collections:
   - docs_slack-integration
   - docs_broker
   - docs_java
-  - docs_python 
+  - docs_python
   - docs_scala
   - docs_ruby
   - docs_golang
@@ -53,3 +53,4 @@ collections:
   - docs_cloud-foundry
   - docs_pivotal-web-services
   - docs_bitbucket-server
+  - docs_groups
