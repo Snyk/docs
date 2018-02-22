@@ -121,6 +121,16 @@
           </ul>
           {% endif %}
         </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__ignoring-issues">
+          <a href="/docs/ignoring-issues/" class="nav-tree__item__link">Ignoring Issues</a>
+          {% if page.section == "ignoring-issues" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_ignoring-issues %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/ignoring-issues/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__github">
           <a href="/docs/github/" class="nav-tree__item__link">GitHub integration</a>
           {% if page.section == "github" %}
