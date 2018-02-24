@@ -33,6 +33,7 @@ collections:
   - docs_faqs
   - docs_ci
   - docs_github
+  - docs_gitlab
   - docs_ignoring-issues
   - docs_orgs
   - docs_security

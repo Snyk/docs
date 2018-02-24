@@ -151,6 +151,16 @@
           </ul>
           {% endif %}
         </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__gitlab">
+          <a href="/docs/gitlab/" class="nav-tree__item__link">GitLab integration</a>
+          {% if page.section == "gitlab" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_gitlab %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/gitlab/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__bitbucket-server">
           <a href="/docs/bitbucket-server/" class="nav-tree__item__link">Bitbucket Server integration</a>
           {% if page.section == "bitbucket-server" %}

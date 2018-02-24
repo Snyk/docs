@@ -2,7 +2,7 @@
 title: How to integrate GitHub to test and watch your repositories
 ---
 
-You can add your Node.js, Ruby, Python, Scala and Java GitHub repos and quickly test them, or decide which ones you’d like to continously watch with Snyk.
+You can add your Node.js, Ruby, Python, Scala and Java GitHub repos and quickly test them, or decide which ones you’d like to continuously watch with Snyk.
 
 ![Adding your GH repos](http://res.cloudinary.com/snyk/image/upload/v1518193304/docs/GH-add_repos.png)
 
@@ -12,4 +12,4 @@ You can add your Node.js, Ruby, Python, Scala and Java GitHub repos and quickly 
 4. Click on the button at the bottom of the page "Add selected repositories to Snyk". The selected repos appear in your projects, and will be continuously checked for vulnerabilities.
 5. Clicking "View report" on any project lets you view & fix vulnerabilities right away. You'll be able to review the suggested remediations, and create a PR with the required upgrades or patches.
 
-<div class="alert alert--inline alert--notice"><p class="alert__text">To view your organisation's projects in Snyk, you'll need to have <a href="#authorizing-github">sufficient access</a> to your organisation's repositories on GitHub.</p></div>
+<div class="alert alert--inline alert--warning"><p class="alert__text">To view your organisation's projects in Snyk, you'll need to have <a href="#authorizing-github">sufficient access</a> to your organisation's repositories on GitHub.</p></div>
