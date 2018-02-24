@@ -203,7 +203,7 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
-  {% endfor %}{% assign ignoring = site.docs_ignoring-issues | where: 'draft', 'false' %}{% for article in ignoring-issues %}
+  {% endfor %}{% assign ignoring-issues = site.docs_ignoring-issues | where: 'draft', 'false' %}{% for article in ignoring-issues %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_ignoring-issues" : "true",
