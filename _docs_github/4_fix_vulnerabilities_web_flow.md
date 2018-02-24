@@ -13,7 +13,7 @@ generate a Snyk pull request that fixes only this vulnerability.
 
 ![Fix button](https://res.cloudinary.com/snyk/image/upload/c_scale,w_774/v1478172579/docs/Fix_vulnerabilities_with_a_pull_request.png)
 
-You can review the vulnerabilities that will be fixed, change your selection, and choose to ignore any vulnerabilties that can't be fixed right now before opening the pull request on the 'Open a fix PR' page.
+You can review the vulnerabilities that will be fixed, change your selection, and choose to ignore any vulnerabilities that can't be fixed right now before opening the pull request on the 'Open a fix PR' page.
 
 Note that patching is only supported for Node.js repos; Ruby vulnerabilities can be fixed with upgrades only.
 
@@ -29,15 +29,15 @@ Here’s an example for the pull request:
 
 ![Snyk remediation PR](https://res.cloudinary.com/snyk/image/upload/v1478173163/docs/Snyk_fix_PR_example.png)
 
-#### Get a Snyk pull request when newly disclosed vulnerabilities affect you
+### Get a Snyk pull request when newly disclosed vulnerabilities affect you
 
 Whenever a vulnerability is disclosed that affects a repo you’re watching, Snyk will not only email you about it, but also generate a Snyk pull request that addresses the vulnerabilities. You'll receive a pull request similar to the example above.
 
-#### Get a Snyk pull request when new upgrades or patches are available
+### Get a Snyk pull request when new upgrades or patches are available
 
 When no upgrade is available, you can ignore or patch the vulnerability (patching is only available for Node.js projects). When a better remediation option has become available, for example an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email, and also generates a pull request with the new fix.
 
-#### Disable automatic pull requests
+### Disable automatic pull requests
 
 You can disable Snyk's auto-generated pull requests with fixes in your organisation settings. This will affect all projects in the organisation.
 

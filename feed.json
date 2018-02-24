@@ -203,6 +203,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign gitlab = site.docs_gitlab | where: 'draft', 'false' %}{% for article in gitlab %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_gitlab" : "true",
+    "topic" : "gitlab",
+    "topicSlug" : "gitlab",
+    "url"     : "/docs/gitlab/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign ignoring-issues = site.docs_ignoring-issues | where: 'draft', 'false' %}{% for article in ignoring-issues %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
