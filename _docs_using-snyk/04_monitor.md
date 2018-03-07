@@ -23,6 +23,13 @@ Notifications about newly disclosed vulnerabilities related to these dependencie
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk monitor --org=my-org-name</span></code></pre></div>
 
+<h3>Overriding the project name</h3>
+<p>If you do not wish to have the name of your project uploaded to Snyk you can specify a name to override it with. You can also use this flag when you are testing multiple manifest files within the same project and need to differentiate between them.</p>
+
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">
+snyk monitor --file=package.json --project-name=myapp-frontend 
+<br />snyk monitor --file=build.sbt --project-name=myapp-backend </span></code></pre></div>
+
 <h3>Monitor a Maven or Gradle project with variables</h3>
 <p>You can pass variables to <code>snyk monitor</code> running on Maven or Gradle projects. This is useful when you want to monitor a specific profile (in Maven) or configuration (in Gradle), or pass system properties. This is done by sending flags after a double-dash option when running <code>snyk monitor</code>. Note that all flags after the double-dash option will be used as Maven flags.</p>
 <p>For example, suppose you want to monitor a specific Maven profile: <code>prod</code>. Running the following will monitor this profile:</p>
