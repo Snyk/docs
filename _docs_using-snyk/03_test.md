@@ -29,13 +29,13 @@ When `snyk test` runs, it tries to detect the appropriate file for your project 
 When testing locally, you can specify the file that Snyk should inspect for package information.
 
 ```console
-$ snyk test --file=package.json</span>
+$ snyk test --file=package.json
 ```
 
 The CLI does not currently auto-detect `.sln` files, so for .NET and .NET Core projects you can specify in the `--file` parameter the location of the solution file and the CLI will run on all the projects it finds inside.
 
 ```console
-$ snyk test --file=myApp.sln</span>
+$ snyk test --file=myApp.sln
 ```
 
 ### Setting severity threshold
