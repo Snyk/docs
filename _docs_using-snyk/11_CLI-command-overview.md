@@ -37,6 +37,8 @@ ignore ............. Ignore an issue. For more help run `snyk help ignore`.
                      dependencies, down to the vulnerable packages (defaults
                      to true). Applicable to `snyk test`.
 --dry-run .......... Don't apply updates or patches during protect.
+--severity-threshold=<low|medium|high>
+                     Only report vulnerabilities of provided level or higher.
 -q, --quiet ........ Silence all output.
 -h, --help ......... This help information.
 -v, --version ...... The CLI version.
