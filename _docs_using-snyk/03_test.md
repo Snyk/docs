@@ -45,7 +45,7 @@ To have a better control over your tests, you can pass `severity-threshold` flag
 $ snyk test --severity-threshold=medium
 ```
 
-_Note: `low` option has a currently same effect as running without specification, e.g. all vulnerabilities will be reported._
+_Note: `low` option currently has the same effect as running without specifying the threshold, i.e. all vulnerabilities will be reported._
 
 ### Note for Node.js:
 Since `snyk test` looks at the locally installed modules, it needs to run after `npm install` or `yarn install`, and will seamlessly work with `shrinkwrap`, npm enterprise or any other custom installation logic you have.
