@@ -163,6 +163,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign notifications = site.docs_notifications | where: 'draft', 'false' %}{% for article in notifications %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_notifications" : "true",
+    "topic" : "notifications",
+    "topicSlug" : "notifications",
+    "url"     : "/docs/notifications/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign orgs = site.docs_orgs | where: 'draft', 'false' %}{% for article in orgs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
