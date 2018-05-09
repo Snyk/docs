@@ -26,8 +26,10 @@ Notifications about newly disclosed vulnerabilities related to these dependencie
 <h3>Overriding the project name</h3>
 <p>If you do not wish to have the name of your project uploaded to Snyk you can specify a name to override it with. You can also use this flag when you are testing multiple manifest files within the same project and need to differentiate between them.</p>
 
+<p>Valid project names can contain: letters, digits, slashes, periods and dashes. Monitor will fail and will output a message that an invalid name was provided if the project name is not valid.</p>
+
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">
-snyk monitor --file=package.json --project-name=myapp-frontend 
+snyk monitor --file=package.json --project-name=myapp-frontend
 <br />snyk monitor --file=build.sbt --project-name=myapp-backend </span></code></pre></div>
 
 <h3>Monitor a Maven or Gradle project with variables</h3>
