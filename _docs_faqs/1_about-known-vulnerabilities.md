@@ -6,6 +6,10 @@ title: About known vulnerabilities
 
 Known vulnerabilities are publicly disclosed security bugs, typically found and logged by users, or reported by security researchers. Being public makes these issues the easiest ones for attackers to find and exploit <sup><a href="http://www.theregister.co.uk/2015/02/23/hp_hack_vulnerable_threat_study/">[1]</a></sup>, and therefore very important to address.
 
+### New stuff
+
+It's awesome!
+
 ### What are direct and deep dependencies?
 
 Known vulnerabilities can be introduced either via a direct or via a deep dependency.
