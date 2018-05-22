@@ -5,4 +5,4 @@ We recommend adding a dedicated AWS Identity and Access Management (IAM) user fo
 
 The IAM user only needs one attached policy: `AWSLambdaReadOnlyAccess`.
 
-You can learn more about IAM users on the [AWS documentation](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html).
+You can learn more about IAM users on the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html).

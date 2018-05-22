@@ -8,4 +8,4 @@ You can add your Node.js, Ruby, Python, Scala and Java GitLab projects and quick
 2. Go to Snyk's [integrations](https://snyk.io/integrations) page and click "Connect to GitLab".
 3. Add your account credentials and the token you just generated to the GitLab integration settings area in Snyk.
 
-![GitLab Integration Settings](http://res.cloudinary.com/snyk/image/upload/v1519502216/features/gitlab-connect.png)
+![GitLab Integration Settings](https://res.cloudinary.com/snyk/image/upload/v1519502216/features/gitlab-connect.png)

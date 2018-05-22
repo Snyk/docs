@@ -27,4 +27,4 @@ This would result in JSON output similar to the following, which contains the Se
 
 From there you can login to your Snyk account and paste in your Access Key ID and Secret Access Key.
 
-More information on obtaining your security credentials from AWS can be found [in their documentation](http://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html).
+More information on obtaining your security credentials from AWS can be found [in their documentation](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html).
