@@ -15,7 +15,7 @@ You can review the vulnerabilities that will be fixed, change your selection, an
 
 Note that patching is only supported for Node.js projects; Ruby vulnerabilities can be fixed with upgrades only.
 
-![Open a fix Merge Request page](http://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1519427397/features/gitlab-mr.png)
+![Open a fix Merge Request page](https://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1519427397/features/gitlab-mr.png)
 
 Snyk fixes your Ruby projects by updating vulnerable dependencies in your Gemfile.lock file. When a fix requires a change to your Gemfile, our fix merge requests will propose these changes.
 
@@ -23,7 +23,7 @@ When you open a merge request via snyk.io, we will give you a heads-up when this
 
 Here’s an example for the merge request:
 
-![Snyk remediation MR](http://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1519427398/features/gitlab-fix.png)
+![Snyk remediation MR](https://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1519427398/features/gitlab-fix.png)
 
 #### Get a Snyk merge request when newly disclosed vulnerabilities affect you
 

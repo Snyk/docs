@@ -5,7 +5,7 @@ If you decide to disable the Bitbucket Server integration for any reason, you ca
 
 You'll need to find the Bitbucket Server integration in your list of integrations, and click "Edit Settings". You'll be taken to a page that shows the current status of your Bitbucket Server connection, a place to update your credentials, and a red box at the bottom to disconnect from Bitbucket Server.
 
-![Screenshot showing the Disconnect screen for disabling the Bitbucket Server integration](http://res.cloudinary.com/snyk/image/upload/v1497448501/docs/bb_server_disconnect.png)
+![Screenshot showing the Disconnect screen for disabling the Bitbucket Server integration](https://res.cloudinary.com/snyk/image/upload/v1497448501/docs/bb_server_disconnect.png)
 
 If you choose to disconnect, your Bitbucket Server credentials will be removed from Snyk and any Bitbucket Server projects we had been monitoring will be deactivated on Snyk.
 
