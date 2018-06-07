@@ -131,6 +131,16 @@
           </ul>
           {% endif %}
         </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__service-accounts">
+          <a href="/docs/service-accounts/" class="nav-tree__item__link">Service Accounts</a>
+          {% if page.section == "service-accounts" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_service-accounts %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/service-accounts/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__ignoring-issues">
           <a href="/docs/ignoring-issues/" class="nav-tree__item__link">Ignoring Issues</a>
           {% if page.section == "ignoring-issues" %}

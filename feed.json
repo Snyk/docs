@@ -183,6 +183,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign service-accounts = site.docs_service-accounts | where: 'draft', 'false' %}{% for article in service-accounts %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_service-accounts" : "true",
+    "topic" : "service-accounts",
+    "topicSlug" : "service-accounts",
+    "url"     : "/docs/service-accounts/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign groups = site.docs_groups | where: 'draft', 'false' %}{% for article in groups %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
