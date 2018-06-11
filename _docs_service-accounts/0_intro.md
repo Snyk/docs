@@ -2,4 +2,6 @@
 title: ""
 ---
 
-Service accounts allow you to generate multiple API tokens for your Snyk organisations. These aren't assigned to a specific user, but a "service account". This functionality is available on the Pro and above plans.
+Service Accounts are a special type of user that has an API token associated with it. You can set up a Service Account to be used for CI and other automation purposes without using an actual Snyk user's token.
+
+Each service account has a name associated with it to make it easier to recognise. The name is unique for the org and cannot be re-used.
