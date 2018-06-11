@@ -37,6 +37,7 @@ collections:
   - docs_ignoring-issues
   - docs_orgs
   - docs_security
+  - docs_service-accounts
   - docs_badges
   - docs_landing
   - docs_bitbucket
