@@ -8,7 +8,7 @@ Once you’ve set up the connection, visit one of your Snyk projects. You’ll n
 
 ![Button to create a Jira issue](https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto/v1529413402/docs/jira-integration/create-issue-button.png)
 
-When you click on this, a modal will open with the details about the vulnerability copied across into the relevant fields. You can review and edit this before creating the issue.
+When you click on this, a Jira issue creation form will appear with the Snyk issue details copied across into the relevant fields. You can review and edit this before creating the issue.
 
 Select which Jira project you’d like to send the issue to. The fields that we display below are based on the fields that project has, so switching between projects may show different options.
 
