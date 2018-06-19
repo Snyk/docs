@@ -42,6 +42,7 @@ collections:
   - docs_landing
   - docs_bitbucket
   - docs_slack-integration
+  - docs_jira-integration
   - docs_broker
   - docs_java
   - docs_python
