@@ -293,6 +293,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign jira-integration = site.docs_jira-integration | where: 'draft', 'false' %}{% for article in jira-integration %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_jira-integration" : "true",
+    "topic" : "jira",
+    "topicSlug" : "jira-integration",
+    "url"     : "/docs/jira-integration/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign slack-integration = site.docs_slack-integration | where: 'draft', 'false' %}{% for article in slack-integration %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
