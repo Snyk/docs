@@ -5,5 +5,5 @@ ignore:
   SNYK-RUBY-NOKOGIRI-20299:
     - '*':
         reason: No fix available
-        expires: '2018-06-21T17:04:06.570Z'
+        expires: '2028-06-21T17:04:06.570Z'
 patch: {}
