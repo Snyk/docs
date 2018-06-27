@@ -133,6 +133,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign docker = site.docs_docker | where: 'draft', 'false' %}{% for article in docker %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_docker" : "true",
+    "topic" : "docker",
+    "topicSlug" : "snyk-for-docker",
+    "url"     : "/docs/docker/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign nodejs = site.docs_nodejs | where: 'draft', 'false' %}{% for article in nodejs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
