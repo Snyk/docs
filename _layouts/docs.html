@@ -125,6 +125,16 @@
           </ul>
           {% endif %}
         </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__docker">
+          <a href="/docs/docker/" class="nav-tree__item__link">Snyk for Docker</a>
+          {% if page.section == "docker" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_docker %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/docker/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__heroku">
           <a href="/docs/heroku/" class="nav-tree__item__link">Snyk for Heroku</a>
           {% if page.section == "heroku" %}
@@ -419,6 +429,15 @@
 
       {% if page.section == "php" %}
       {% for article in site.docs_php %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "docker" %}
+      {% for article in site.docs_docker %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}
