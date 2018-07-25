@@ -12,6 +12,7 @@ Snyk broker currently supports the following SCMs:
 * Bitbucket Server
 * Gitlab.com
 * On-premise Gitlab deployment
+* On-premise Jira
 
 ### How it works
 
