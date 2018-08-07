@@ -2,8 +2,8 @@
 title: API token configuration
 ---
 
-You can find your API token in your [account settings on snyk.io](https://snyk.io/account/). 
-Make sure you don't check your API token into source control, to avoid exposing it to others. Instead, use your CI environment variables to configure it. 
+You can find your API token in your [account settings on snyk.io](https://app.snyk.io/account/). 
+Make sure you don't check your API token into source control, to avoid exposing it to others. Instead, use your CI environment variables to configure it.
 
 See guidance for how to do this on:
 

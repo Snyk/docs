@@ -27,7 +27,7 @@ Your policy file has been created with the actions you've selected, add it to yo
 To review your policy, run `snyk policy`.
 
 You can see a snapshot of your dependencies here:
-https://snyk.io/monitor/441b89f0-6e5a-40a0-9e4e-d824e51998a2
+https://app.snyk.io/monitor/441b89f0-6e5a-40a0-9e4e-d824e51998a2
 
 We'll notify you when relevant new vulnerabilities are disclosed.
 ```
