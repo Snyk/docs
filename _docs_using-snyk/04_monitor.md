@@ -9,7 +9,7 @@ title: Monitor
 
 <p>Just before you deploy, run <code>snyk monitor</code> in your project directory. This will take a snapshot of your current dependencies, so we can notify you about newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path is created. If you take multiple snapshots of the same project, we will only alert you to new information about the latest one.</p>
 
-<p>Log in and go to <a href="https://snyk.io/monitor/">snyk.io/monitor</a> to see the lastest snapshot and history of your project.</p>
+<p>Log in and go to <a href="https://snyk.io/monitor/">snyk.io/monitor</a> to see the latest snapshot and history of your project.</p>
 
 <div class="screenshot">
 <h3 class="screenshot__label">Example output</h3>
@@ -18,8 +18,8 @@ Captured a snapshot of this project's dependencies. Explore this snapshot at htt
 Notifications about newly disclosed vulnerabilities related to these dependencies will be emailed to you.</code></pre>
 </div>
 
-<h3>Specifiying which organisation for monitoring</h3>
-<p>If you have several <a href="https://snyk.io/docs/orgs">organisations set up in Snyk</a>, running <code>snyk monitor</code> will associate the generated snapshot to your "default" (personal) organization. To specify a different organisation, you can use the <code>--org</code> option.</p>
+<h3>Specifying which organisation for monitoring</h3>
+<p>If you have several <a href="https://snyk.io/docs/orgs">organisations set up in Snyk</a>, running <code>snyk monitor</code> will associate the generated snapshot to your "default" (personal) org. To specify a different organisation, you can use the <code>--org</code> option.</p>
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk monitor --org=my-org-name</span></code></pre></div>
 

@@ -6,4 +6,4 @@ The dependencies tab displays an inventory of all your project's dependencies, a
 
 ![Dependencies view.](https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto,w_500/v1519062616/docs/report-deps.png)
 
-All the reports are available to export as a CSV and data avaiable via APIs. Documentation about Snyk's APIs are published at https://snyk.docs.apiary.io/
+All the reports are available to export as a CSV and data available via APIs. Documentation about Snyk's APIs are published at https://snyk.docs.apiary.io/

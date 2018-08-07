@@ -24,7 +24,7 @@ If the product developer does not respond to any of the three notification attem
 Acknowledgement of the notification by the developer should include all of the following items:
 
 a. developer confirms the vulnerability information is received and the schedule for investigation.  
-b. developer provides a point of contact responsible for coordinating and tracking information on the issue from within their organization.  
+b. developer provides a point of contact responsible for coordinating and tracking information on the issue from within their org.  
 c. developer provides an estimate as to when they expect to complete their initial investigation of the security issue provided in the notification.  
 
 ### 3. Developer Coordination
