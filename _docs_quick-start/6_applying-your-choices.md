@@ -4,7 +4,7 @@ title: Applying your choices
 
 That’s it, we’ve tackled all the issues – hurray!
 
-Before the wizard applies the requested changes, it suggests adding two steps to your Package.json workflow to keep you vulnerability free.
+Before the wizard applies the requested changes, it suggests adding two steps to your package.json workflow to keep you vulnerability free.
 
 ```console
 ? Add `snyk test` to package.json file to fail test on newly disclosed vulnerabilities? Yes

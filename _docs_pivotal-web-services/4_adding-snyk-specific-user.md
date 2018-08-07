@@ -1,7 +1,7 @@
 ---
 title: Adding a Snyk-specific user to Pivotal Web Services
 ---
-We suggest adding a dedicated user to Pivotal Web Services for your Snyk organization. That way if at some point you need to revoke access for any reason, you can do so without impacting anyone within your organization.
+We suggest adding a dedicated user to Pivotal Web Services for your Snyk org. That way if at some point you need to revoke access for any reason, you can do so without impacting anyone within your org.
 
 The minimum permissions needed in order to integrate with Snyk is the space role of `SpaceAuditor`.
 

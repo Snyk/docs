@@ -1,5 +1,5 @@
 ---
-title: "GitHub / GitHub Enterprise set-up"
+title: "GitHub / GitHub Enterprise setup"
 ---
 
 In order to interact with your GitHub.com or GitHub Enterprise repositories, Snyk needs to use a personal access token with "repo" and "admin:repo_hook" scopes.
@@ -11,8 +11,8 @@ To create a GitHub personal access token:
  3. click on the "Generate new token" button
  4. enter a description for the token, and select the "**repo**" and "**admin:repo_hook**" scope
  5. click on the "Generate token" button
- 6. securely save the token so that you can configure your broker client with it
+ 6. securely save the token so that you can configure your Broker client with it
 
-This GitHub token must be provided to the broker client, which then identifies with it on requests as they are proxied from Snyk to your GitHub.com or GitHub Enterprise.
+This GitHub token must be provided to the Broker client, which then identifies with it on requests as they are proxied from Snyk to your GitHub.com or GitHub Enterprise.
 
 *The GitHub token never leaves your network!*

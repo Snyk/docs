@@ -7,7 +7,7 @@ In either case, you'll see a list of any available projects on the Cloud Foundry
 
 ![Screenshot of the screen displaying the available Cloud Foundry apps to monitor](https://res.cloudinary.com/snyk/image/upload/w_auto,c_scale,q_auto/v1493170639/serverless-docs/cloud-foundry-apps-to-test.png)
 
-As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Cloud Foundry applications in your [project dashbard](https://snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
+As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored Cloud Foundry applications in your [project dashboard](https://snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
 ![Screenshot of the screen displaying the available Cloud Foundry apps to monitor](https://res.cloudinary.com/snyk/image/upload/w_auto,c_scale,q_auto/v1493171440/serverless-docs/cloud-foundry-projects.png)
 

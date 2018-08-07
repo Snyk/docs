@@ -89,7 +89,7 @@ This also works for Bitbucket and GitLab.
 You can also test a public npm package or Github project [via the Test page on snyk.io](https://snyk.io/test/).
 
 ### Test a public npm package
-You can also use `snyk test` to **scrutinize a public package before installing it**, to see if it has known vulnerabilities or not. Using the package name will test the latest version of that package, and you can also provide a specific version or range using `snyk test module[@semver-range]`.
+You can also use `snyk test` to **scrutinise a public package before installing it**, to see if it has known vulnerabilities or not. Using the package name will test the latest version of that package, and you can also provide a specific version or range using `snyk test module[@semver-range]`.
 
 ```console
 snyk test lodash
