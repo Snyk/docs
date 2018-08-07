@@ -9,12 +9,12 @@ title: Monitor
 
 <p>Just before you deploy, run <code>snyk monitor</code> in your project directory. This will take a snapshot of your current dependencies, so we can notify you about newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path is created. If you take multiple snapshots of the same project, we will only alert you to new information about the latest one.</p>
 
-<p>Log in and go to <a href="https://snyk.io/monitor/">snyk.io/monitor</a> to see the latest snapshot and history of your project.</p>
+<p>Log in and go to <a href="https://app.snyk.io/monitor/">snyk.io/monitor</a> to see the latest snapshot and history of your project.</p>
 
 <div class="screenshot">
 <h3 class="screenshot__label">Example output</h3>
 <pre><code>$ snyk monitor
-Captured a snapshot of this project's dependencies. Explore this snapshot at https://snyk.io/monitor/1a53f19a-f64f-44ab-b122-74ce82c1c34b
+Captured a snapshot of this project's dependencies. Explore this snapshot at https://app.snyk.io/monitor/1a53f19a-f64f-44ab-b122-74ce82c1c34b
 Notifications about newly disclosed vulnerabilities related to these dependencies will be emailed to you.</code></pre>
 </div>
 

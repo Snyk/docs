@@ -4,8 +4,8 @@ title: "Connect Snyk to your Brokered SCM"
 
 Once your Broker client is up and running, you can connect you Snyk account to your SCM in a secure manner.
 
- 1. **Important:** log out of [https://snyk.io](https://snyk.io)
- 2. log back in to [https://snyk.io](https://snyk.io)
+ 1. **Important:** log out of [https://app.snyk.io](https://app.snyk.io)
+ 2. log back in to [https://app.snyk.io](https://app.snyk.io)
  3. select the organisation that you're using with your Broker
  4. navigate to the "Projects" page
  5. click on "Add Projects"

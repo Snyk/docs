@@ -1,7 +1,7 @@
 ---
 title: Connecting Snyk to Cloud Foundry
 ---
-In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you'll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://snyk.io/integrations) and clicking on "Connect to Cloud Foundry".
+In order for Snyk to be able to monitor your deployed Cloud Foundry applications, you'll first need to connect Snyk to your Cloud Foundry account. You can do this by navigating to the [Integrations page](https://app.snyk.io/integrations) and clicking on "Connect to Cloud Foundry".
 
 ![Screenshot of the Integrations page for Snyk](https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto,w_auto/v1497365418/serverless-docs/integrations.png)
 
