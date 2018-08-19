@@ -21,6 +21,7 @@
     {% if page.section == "docker" %}docs--docker{% endif %}
     {% if page.section == "heroku" %}docs--heroku{% endif %}
     {% if page.section == "aws-lambda" %}docs--lambda{% endif %}
+    {% if page.section == "azure-functions" %}docs--azure-functions{% endif %}
     {% if page.section == "cloud-foundry" %}docs--cloud-foundry{% endif %}
     {% if page.section == "pivotal-web-services" %}docs--pivotal-web-services{% endif %}
     {% if page.section == "quick-start" %}docs--quick-start{% endif %}
@@ -152,6 +153,16 @@
           <ul class="nav-tree__branch">{% for article in site.docs_lambda %}{% if article.title == "" %}{% else %}
             <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
               <a href="/docs/aws-lambda/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__azure-functions">
+          <a href="/docs/azure-functions/" class="nav-tree__item__link">Snyk for Azure Functions</a>
+          {% if page.section == "azure-functions" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_azure-functions %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/azure-functions/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
             </li>{% endif %}{% endfor %}
           </ul>
           {% endif %}
@@ -457,6 +468,15 @@
 
       {% if page.section == "aws-lambda" %}
       {% for article in site.docs_aws-lambda %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "azure-functions" %}
+      {% for article in site.docs_azure-functions %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}

@@ -33,6 +33,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign azure-functions = site.docs_azure-functions | where: 'draft', 'false' %}{% for article in azure-functions %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_azure-functions" : "true",
+    "topic" : "azure-functions",
+    "topicSlug" : "azure-functions",
+    "url"     : "/docs/azure-functions/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign heroku = site.docs_heroku | where: 'draft', 'false' %}{% for article in heroku %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
