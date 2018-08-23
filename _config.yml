@@ -55,6 +55,7 @@ collections:
   - docs_nodejs
   - docs_heroku
   - docs_aws-lambda
+  - docs_azure-functions
   - docs_cloud-foundry
   - docs_pivotal-web-services
   - docs_bitbucket-server
