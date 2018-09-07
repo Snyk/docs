@@ -2,7 +2,7 @@
 title: "Setting up your Jira integration"
 ---
 
-To connect your Snyk account to your Jira account, go to the integrations page in your organisation settings and type in your credentials. We recommend setting up a new user in Jira for this, rather than using existing credentials.
+To connect your Snyk account to your Jira account, go to the integrations page in your organisation settings and type in your credentials. We recommend setting up a new user in Jira for this, rather than using existing credentials. You can authenticate by username and password, but we recommend authenticating by API token which you can generate from [Atlassian API tokens](https://id.atlassian.com/manage/api-tokens).
 
 Once you’ve set up the connection, visit one of your Snyk projects. You’ll now see a new button at the bottom of each vulnerability and license issue card that allows you to create a Jira issue.
 
