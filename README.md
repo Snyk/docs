@@ -6,7 +6,7 @@ Preview url: https://snyk.github.io/docs/
 
 1. Pull down the repo
 2. In the command line, navigate to the repo's folder and run `bundle install`
-3. If there are no errors, run `jekyll serve`
+3. If there are no errors, run `bundle exec jekyll serve`
 4. Go to **http://localhost:4000/docs/** in your browser
 
 Check out the [Markdown-cheatsheet](https://github.com/Snyk/general/wiki/Markdown-cheatsheet) for how to write content.
