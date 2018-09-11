@@ -343,6 +343,26 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign custom-package-registries = site.docs_custom-package-registries | where: 'draft', 'false' %}{% for article in custom-package-registries %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_custom-package-registries" : "true",
+    "topic" : "custom-package-registries",
+    "topicSlug" : "custom-package-registries",
+    "url"     : "/docs/custom-package-registries/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
+  {% endfor %}{% assign intellij-plugin = site.docs_intellij-plugin | where: 'draft', 'false' %}{% for article in intellij-plugin %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_intellij-plugin" : "true",
+    "topic" : "intellij-plugin",
+    "topicSlug" : "intellij-plugin",
+    "url"     : "/docs/intellij-plugin/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign faqs = site.docs_faqs | where: 'draft', 'false' %}{% for article in faqs %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
