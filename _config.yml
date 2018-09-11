@@ -63,3 +63,5 @@ collections:
   - docs_reports
   - docs_licenses
   - docs_notifications
+  - docs_intellij-plugin
+  - docs_custom-package-registries
