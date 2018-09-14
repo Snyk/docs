@@ -17,13 +17,15 @@ When `snyk test` runs, it tries to detect the appropriate file for your project 
   1. Gemfile
   1. Gemfile.lock
   1. pom.xml
-  1. requirements.txt
   1. build.gradle
   1. build.sbt
+  1. Pipfile
+  1. requirements.txt
   1. Gopkg.lock
   1. vendor/vendor.json
   1. obj/project.assets.json
   1. packages.config
+  1. composer.lock
 
 
 When testing locally, you can specify the file that Snyk should inspect for package information.
