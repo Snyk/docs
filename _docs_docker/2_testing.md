@@ -6,4 +6,5 @@ We scan Docker images by extracting the image layers and inspecting the package 
 
 To test an image, make sure it is pulled locally (i.e. `docker pull ubuntu:latest`).
 * Run `snyk test --docker ubuntu:latest` to test the image for vulnerabilities.
+* Run `snyk test --docker myapp:latest —file=./myapp/Dockerfile` to test the image for vulnerabilities, and get a more detailed remediation advice for your image by passing the local Dockerfile.
 * Run `snyk monitor --docker ubuntu:latest` to create a snapshot of the image's dependencies for continuous monitoring.
