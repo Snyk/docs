@@ -8,6 +8,6 @@ Within a group, you can create organisations. To add a new organisation within y
 
 This will let you choose a name for your organisation.
 
-![Creating a new grouped org screen.](https://res.cloudinary.com/snyk/image/upload/c_scale,w_834/v1539259823/docs/groups/new-org.png)
+![Creating a new grouped org screen.](https://res.cloudinary.com/snyk/image/upload/c_scale,w_1037/v1539259823/docs/groups/new-org.png)
 
 If you do not see the "Create a new organisation" link you do not have the "group admin" permission set on your account. Email support@snyk.io to ask to have the have the permission set.
