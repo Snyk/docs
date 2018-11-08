@@ -353,6 +353,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign runtime-protection = site.docs_runtime-protection | where: 'draft', 'false' %}{% for article in runtime-protection %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_runtime-protection" : "true",
+    "topic" : "runtime-protection",
+    "topicSlug" : "runtime-protection",
+    "url"     : "/docs/runtime-protection/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign intellij-plugin = site.docs_intellij-plugin | where: 'draft', 'false' %}{% for article in intellij-plugin %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},

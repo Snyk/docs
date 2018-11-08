@@ -28,6 +28,7 @@
     {% if page.section == "using-snyk" %}docs--using-snyk{% endif %}
     {% if page.section == "broker" %}docs--broker{% endif %}
     {% if page.section == "custom-package-registries" %}docs--custom-package-registries{% endif %}
+    {% if page.section == "runtime-protection" %}docs--runtime-protection{% endif %}
     {% if page.section == "github" %}docs--github{% endif %}
     {% if page.section == "bitbucket-server" %}docs--bitbucket-server{% endif %}
     {% if page.section == "orgs" %}docs--orgs{% endif %}
@@ -304,6 +305,16 @@
           <ul class="nav-tree__branch">{% for article in site.docs_custom-package-registries %}{% if article.title == "" %}{% else %}
             <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
               <a href="/docs/custom-package-registries/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__runtime-protection">
+          <a href="/docs/runtime-protection/" class="nav-tree__item__link">Runtime Protection</a>
+          {% if page.section == "runtime-protection" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_runtime-protection %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/runtime-protection/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
             </li>{% endif %}{% endfor %}
           </ul>
           {% endif %}
@@ -668,6 +679,15 @@
 
       {% if page.section == "custom-package-registries" %}
       {% for article in site.docs_custom-package-registries %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "runtime-protection" %}
+      {% for article in site.docs_runtime-protection %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}
