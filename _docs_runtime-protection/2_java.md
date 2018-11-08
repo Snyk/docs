@@ -2,7 +2,7 @@
 title: "Java Onboarding"
 ---
 
-To start using Snyk Runtime Protection for your Java applications, download the agent from this URL: https://static.snyk.io/resources/runtime/agent/java/snyk-java-runtime-agent.zip and unzip the archive.
+To start using Snyk Runtime Protection for your Java applications, [download the agent](https://static.snyk.io/resources/runtime/agent/java/snyk-java-runtime-agent.zip) and unzip the archive.
 
 * Copy `snyk-java-runtime-agent.jar` alongside your application.
 * Create a `snyk-agent.properties` file at the location of the agent jar file, containing the project ID of your Snyk project like so: `projectId=0462e42b-c92f-4b48-bac8-81eb3ff7f43e`
