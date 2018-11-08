@@ -65,3 +65,4 @@ collections:
   - docs_notifications
   - docs_intellij-plugin
   - docs_custom-package-registries
+  - docs_runtime-protection
