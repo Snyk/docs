@@ -1,5 +1,5 @@
 ---
-title: "NodeJS Onboarding"
+title: "Getting started with NodeJS"
 ---
 
 To start using Snyk Runtime Protection for your NodeJS applications, add the [@snyk/nodejs-runtime-agent](https://www.npmjs.com/package/@snyk/nodejs-runtime-agent) dependency to your project by running:
