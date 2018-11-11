@@ -1,5 +1,5 @@
 ---
-title: "Java Onboarding"
+title: "Getting started with Java"
 ---
 
 To start using Snyk Runtime Protection for your Java applications, [download the agent](https://static.snyk.io/resources/runtime/agent/java/snyk-java-runtime-agent.zip) and unzip the archive.
