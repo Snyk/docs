@@ -15,6 +15,8 @@ You'll get two alerts in Slack:
 
 ![Slack Remediation Alert](https://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1474298547/Slack-Remediation-Alert.png)
 
-To set it up, go to your 'Manage organisation' settings, and simply enter the Slack WebHook URL.
+To set it up you will need to generate a Slack webhook. You can either do this via the [Incoming WebHooks app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) or by [creating your own Slack app](https://api.slack.com/incoming-webhooks).
+
+Once you have generated your Slack Webhook URL, go to your 'Manage organisation' settings, and simply enter the URL.
 
 ![Slack Integration](https://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1474297920/Slack-Integration-Settings.png)
