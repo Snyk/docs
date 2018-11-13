@@ -8,9 +8,9 @@ Snyk Runtime Protection provides application security monitoring in your applica
 
 Snyk Runtime Protection highlights exploitable vulnerabilities in your application dependencies. With this data, you can focus your remediation efforts where they matter the most.
 
-![A vulnerability with runtime information inside](https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto,w_800/v1542023032/docs/runtime/runtime-issue-card.png)
+![A vulnerability with runtime information inside](https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto,w_800/v1542103375/docs/runtime/issue-called-at-runtime.png)
 
-_A vulnerability that is called in runtime. The vulnerable functions are listed._
+_A vulnerability that is called at runtime. The vulnerable functions are listed._
 
 The Snyk runtime agent inspects every dependency of your application. It creates an execution hook on vulnerable functions in relevant dependencies. Using these hooks, the agent detects actual use of vulnerable functions. The agent sends this data in beacons to Snyk, adding to the Snyk project data.
 
